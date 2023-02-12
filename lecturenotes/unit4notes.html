@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Unit 4 notes</title>
+        <style>
+            td, th{border:1px solid black;}
+        </style>
+    </head>
+    <body>
+        <h1>Tables and Forms Day</h1>
+        <h2>Tables</h2>
+        <table>
+            <tr>
+                <th>Country</th>
+                <th>Population</th>
+                <th>% of the World Population</th>
+            </tr>
+            <tf>
+                <td>China</td>
+                <td>1,403,830,640</td>
+                <td>18.0%</td>
+            </tf>
+            <tr>
+                <td>India</td>
+                <td>1,365,529,124</td>
+                <td>17.5%</td>
+            </tr>
+        </table>
+
+        <h2>Forms</h2>
+
+        <!--action - page that processes form
+        methos - how data is sent (in url or on header)
+        -->
+        <form action="" method="post">
+            <p>This form is going to be for takeout orders.</p>
+            <label for="fullname"> Full Name:</label>
+            <input tyoe="text" id="fullname" name="fullname">
+            <br>
+            <label for="items">Items:</label><br>
+            <textarea id="items" name="items" rows="3" cols="50"></textarea>
+            <br>
+
+            <input type="radio" id="pickup" name="pickudelivery" value="pickup">
+            <label for="pickup">pickup</label>
+            <input type="radio" id="delivery" name="pickupdelivery" value="delivery">
+            <label for="delivery">delivery</label>
+            <br>
+            <label for="location">Location</label>
+            <select id="location" name="location">
+                <option></option> <!--blank option is to choose nothing-->
+                <option value="westcott">Westcott</option>
+                <option value="downtown">Downtown</option>
+                <option value="eastwood">Eastwood</option>
+            </select>
+            <br>
+            <label for="orderdate">Order Date:</label>
+            <input type="date" id="orderdate" name="orderdate"><br>
+            <input type="submit" value="place order">
+        </form>
+    </body>
+</hmtl>

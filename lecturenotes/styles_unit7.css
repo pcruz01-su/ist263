@@ -1,0 +1,25 @@
+h1{color: #00ff00}
+
+/*hex colors are six digits 0-9 or a-f for each digit*/
+
+a:link {color: #00ff00;}
+a:visited {color: #ff0000;}
+/*Pseudo selectors, needs a colon after the element and then state name*/ 
+
+a:hover {
+    background-color: #0000ff;
+    text-decoration-style: wavy;}
+
+/*you can change any property in css in a pseudo selector*/
+
+body{background-color: #000000;
+    background-image: url(images/paint.jpeg);
+    background-size: 600px;}
+
+p {
+    background-color: #0000ff;
+    margin: 0px;
+    padding: 0px;
+    border: 5px solid #aaaaaa;
+    width: 300px;
+}

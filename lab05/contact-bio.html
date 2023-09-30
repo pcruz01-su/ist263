@@ -1,46 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
     <head>
         <meta charset="utf-8">
-        <title>Contacts</title>
-   </head>
-   <!--This is lab 02 bio-->
+        <title>Scholarship Form</title>
+        <style>
+            td, th {border: 1px solid black;}
+        </style>
+    </head>
+
     <body>
-        <h1>Priscilla Cruz's Biography</h1>
-        <h2>Personal Info</h2>
-        <p><strong>DATE OF BIRTH: FEBRUARY 10, 2021</strong></p>
-        <p> I major in Information Management and Technology, concentrating on Web Design. I have strong creativity and passion for creating designs for anything from home décor, landscaping, fashion, to websites. I am also a 2nd Lieutenant in the United States Army. Outside of work, I spend most of my time practicing my craft but I also enjoy learning about cars, going to the gym, studying the bible, or painting.</p>
-        <h2>My Top Three Favorite Shows:</h2>
-        <ol>
-            <li>The Twilight Zone</li>
-            <li>Breaking Bad</li>
-            <li>The Office</li>
-        </ol>
-        <hr>
-        <p>&copy; 2022</p>  
+        <table>
+            <caption>Scholarships</caption>
+            <tr>
+                <th>Name of Scholarship</th>
+                <th>Ampunt</th>
+                <th>Award Date</th>
+            </tr>
 
-        <!--This is lab 04 contact-->
-        <h1>Forms</h1>
-        <form action="https://formspree.io/f/xbjegzke" method="POST">
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname">
-            <br>
+            <tr>
+                <td>Memorial</td> 
+                <td>10,000</td>
+                <td>5/1/2024</td>
+            </tr>
 
-            <label for="favoritefood">What is your favorite food?</label>
-            <br>
-            <textarea id="favoritefood" name="favoritefood" rows="20" cols="60"></textarea>
-            <br>
+            <tr>
+                <td>Smith Scholarship</td>
+                <td>100,000,000</td>
+                <td>3/1/2024</td>
+            </tr>
+        </table>
 
-            <input type="radio" id="american" name="american" value="American">
-            <label for="american">American</label>
-            <input type="radio" id="european" name="european" value="European">
-            <label for="european">European</label>
-            <input type="radio" id="hispanic" name="hispanic" value="Hispanic">
-            <label for="hispanic">Hispanic</label>
+        <form action="" method="post"> 
+            <label for="fullname"> Full name: </label><br>
+            <input type="text" id="fullname" name="Full Name"><br>
 
-            <input type="submit" value="Submit favorite food">
+            <label for="schoolyear">Year in School</label><br>
+            <select id="schoolyear" name="schoolyear">
+                <option></option>
+                <option value="sophmore">Sophmore</option>
+                <option value="downtown">Junior</option>
+                <option value="eastwood">Senior</option>
+            </select><br>
+            <input type="submit" value="send form">
         </form>
-    </body>
 
-</html>
+        <h2>Images</h2>
+        <img src="../images/LinkedIn-Logos/LI-In-Bug.png" alt="linked_in_logo">
+        <img src="../project/project-images/Project_banner.png" alt="linked_in_logo">
+
+
+
+    </body>
+    

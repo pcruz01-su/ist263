@@ -1,9 +1,9 @@
 body, h1,h2 {
     font-family: Arial, Helvetica, sans-serif;
-    color: chocolate;
+    color: blue;
 }
 .evenrow {
-    background-color: gray;
+    background-color: lightgray;
 }
 
 h1 {

@@ -1,0 +1,29 @@
+/*
+a.	Body background color
+b.	Text color
+c.	Link color
+d.	Heading color
+e.	Site Navigation Background
+f.	Site Navigation Highlight Color
+g.	Site Navigation Link Color */
+
+body{background-color: #f8e7e7;}
+
+h1, p {color: #dc561c}
+
+a:link {color: #1100ff;}
+a:visited {color: #a64dda;}
+
+nav a{color: #5f1169}
+
+nav a:hover {background-color: #656363}
+
+
+nav {
+    background-color: #00ffcc;
+    scrollbar-highlight-color: cornflowerblue;
+    padding: 10px;
+    margin-bottom: 30px
+}
+
+table, th, td {border: 1px solid black;}

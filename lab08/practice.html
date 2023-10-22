@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Floats and Flexbox Practice</title>
+		<meta charset="utf-8">
+		<style>
+			.img1 {float: left; margin-right: 10px;}
+            .clear {clear: both}
+
+            .part2 {display: flex;}
+            .part2 article {padding: 20px;}
+            .article1, .article2, .article3 {margin: 10px}
+            .article1 {flex: 2; order: 3; background-color: #cce5ff; border-radius: 1em;}
+            .article2 {flex: 1; order: 2;}
+            .article3 {flex: 1; order: 1;}
+
+		</style>
+	</head>
+	<body>
+        <h1>Floats and Flexbox Practice</h1>
+        <h2>The Floats Part</h2>
+        <div class="part1">
+            <article>
+                <img src="http://laferger.github.io/ist263/images/unit81.jpg" class="img1" alt="fruit">
+                <p>Epic cheeseburgers come in all kinds of manifestations, but we want them in and around our mouth no matter what. Slide those smashed patties with the gently caramelized meat fat between a toasted brioche bun and pass it over. You fall in love with the cheeseburger itself but the journey ain’t half bad either. They’re the childhood friend that knows your highest highs and lowest lows. They’ve been with you through thick and thin and they’re the best at keeping secrets. Whether it’s dressed up or informal, cheeseburgers have your back.</p>
+                <p>Pop quiz: what’s the greatest thing to happen to your mind, body, and soul in recent history? A cheeseburger, obviously. Cheeseburgers know that what you want can also be what you need. Sometimes we lose sight of what really matters in life. There’s something to be said for a gourmet brie and truffle burger paired with parmesan frites, but don’t let that make you forget about the ol’ faithful with American cheddar and a squishy bun. Lettuce remind you that cheeseburgers come in all forms - bun intended.</p>
+            </article>
+            <div class="clear"></div>
+            <article>
+                <img src="http://laferger.github.io/ist263/images/unit8-2.jpg" class="img2" alt="fish">                
+                    <p style="overflow: auto;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                    
+            </article>
+            <article>
+                <img src="http://laferger.github.io/ist263/images/unit8-3.jpg" class="img3" alt="burger">                
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </article>
+        </div>
+        
+        <h2>The Flexbox Part</h2>
+        <div class="part2">
+            <article class="article1">
+                <img src="http://laferger.github.io/ist263/images/unit81.jpg" class="p2img1" alt="fruit">
+                <p>Epic cheeseburgers come in all kinds of manifestations, but we want them in and around our mouth no matter what. Slide those smashed patties with the gently caramelized meat fat between a toasted brioche bun and pass it over. You fall in love with the cheeseburger itself but the journey ain’t half bad either. They’re the childhood friend that knows your highest highs and lowest lows. They’ve been with you through thick and thin and they’re the best at keeping secrets. Whether it’s dressed up or informal, cheeseburgers have your back.</p>
+                <p>Pop quiz: what’s the greatest thing to happen to your mind, body, and soul in recent history? A cheeseburger, obviously. Cheeseburgers know that what you want can also be what you need. Sometimes we lose sight of what really matters in life. There’s something to be said for a gourmet brie and truffle burger paired with parmesan frites, but don’t let that make you forget about the ol’ faithful with American cheddar and a squishy bun. Lettuce remind you that cheeseburgers come in all forms - bun intended.</p>
+            </article>
+            <article class="article2">
+                <img src="http://laferger.github.io/ist263/images/unit8-2.jpg" class="p2img2" alt="fish">                
+                <p style="overflow: auto;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                    
+            </article>
+            <article class="article3">
+                <img src="http://laferger.github.io/ist263/images/unit8-3.jpg" class="p2img3" alt="burger">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </article>
+        </div>
+	</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+       <title>Contact</title>
+       <link rel="stylesheet" href="lab8styles.css">
+       <style>
+            .clear {clear: both}
+            .part1 {display: flex; margin: 30px}
+            .part1 div {
+                flex: 1;
+                margin: 30px;
+                padding: 20px;background-color: rgb(78, 70, 55);
+                border-radius: 1em;
+            }
+            .part2{
+                padding: 20px;
+                background-color: rgb(78, 70, 55);
+                border-radius: 1em;
+            }
+            .part2 div {
+                flex:1;
+                padding: 10px;
+            }
+       </style>
+   </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="contacts.html">Contacts</a> |
+            <a href="skills.html">Skills</a> |
+            </nav>
+        <header>
+            <h1>Contact</h1>
+        </header>
+        <main>
+            <div class="part1">
+                    <h2>Address</h2>
+                    <p>Priscilla Cruz<br>
+                        Office of Admissions 401 University Place<br>
+                        Syracuse, NY 13244-2130 </p>
+                    <div class="linkedin">
+                        <a href="http://www.linkedin.com/in/priscilla-cruz-57b70324b" target="_blank">My Linkedin Profile</a> <br>
+                        <a href="mailto:pcruz01@syr.edu">pcruz01@syr.edu</a> <br>
+                        <!--Target attribute with value blank opens new tab-->
+                    <img src="../images/LinkedIn-Logos/LI-In-Bug.png" alt="linkedin"> <br>
+                    </div>
+                </article>
+            <div class="clear"></div>
+
+                <article class="article 2">
+                    <form action="https://formspree.io/f/xbjegzke" method="POST">
+                        <label for="yourname">Your Name:</label> <br>
+                        <input type="text" id="yourname" name="yourname">
+                        <br>
+                        <label for="reason">Reason for contact:</label> <br>
+                        <input type="radio" id="oh" name="oh" value="oh">
+                        <label for="american">Office Hours</label> <br>
+                        <input type="radio" id="cc" name="cc" value="cc">
+                        <label for="cc">Career Counseling</label>
+                        <br>
+                        <label for="comments">Comments</label>
+                        <br>
+                        <textarea id="comments" name="comments" rows="20" cols="60"></textarea>
+                        <br>
+                        <input type="submit" value="Send">
+                    </form>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11664.31082868644!2d-76.1319911!3d43.0397965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fa35368f9%3A0xb8dcf1970308ff8c!2sOffice%20of%20Admissions!5e0!3m2!1sen!2sus!4v1694718146486!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+            </div>
+        </main>
+    </body>
+</html>
+

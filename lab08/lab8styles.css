@@ -1,0 +1,32 @@
+/*
+a.	Body background color
+b.	Text color
+c.	Link color
+d.	Heading color
+e.	Site Navigation Background
+f.	Site Navigation Highlight Color
+g.	Site Navigation Link Color */
+
+body{background-color: #bebebe;}
+
+h1, h2, p, table {
+    color: #000000;
+    font-family: sans-serif;
+}
+
+a:link {color: #ff0000;}
+
+nav a{color: #5f1169}
+
+nav a:hover {background-color: #656363}
+
+
+nav {
+    background-color: #13a0e2;
+    scrollbar-highlight-color: #ed6464;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+table, th, td {border: 1px solid black;}

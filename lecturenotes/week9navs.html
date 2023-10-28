@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            background-color: black;
+            padding: 10px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        div{ padding: 5px;}
+        .nav1{justify-content: flex-end;}
+        .nav2{justify-content: space-around;}
+        .nav3{justify-content: space-between;}
+        .split{justify-content: space-between;}
+
+        .split div{display: flex;}
+    </style>
+</head>
+<body>
+    <h1>Navigation Styles</h1>
+    <h2>Flex End</h2>
+    <nav class="nav1"> <!--flex row-->
+        <div>Home</div> <!--first flex column-->
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </nav>
+    <h2>Space Around</h2>
+    <nav class="nav2"> <!--flex row-->
+        <div>Home</div> <!--first flex column-->
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </nav>
+    <h2>Space Between</h2>
+    <nav class="nav3"> <!--flex row-->
+        <div>Home</div> <!--first flex column-->
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </nav>
+    <h2>Split Navigation</h2>
+    <nav class="split">
+        <div>
+            <div>Home</div> <!--first flex column-->
+            <div>About Us</div>
+            <div>Products</div>
+            <div>Contact</div>
+        </div>
+        <div>
+            <div>Facebook</div> 
+            <div>Twitter</div>
+        </div>
+    </nav>
+</body>
+</html>

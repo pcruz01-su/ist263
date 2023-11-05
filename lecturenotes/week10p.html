@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 10 Notes Responsive Design</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        .viewporttextlarge, .viewporttextsmall {
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+        }
+        .viewporttextsmall {
+            display: none;
+        }
+        @media only screen and (max-width: 800px) {
+            .viewporttextlarge {
+                display: none;
+            }
+            .viewporttextsmall {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="viewporttextlarge">I'm large.</div>
+    <div class="viewporttextsmall">I'm small.</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skills</title>
+        <link rel="stylesheet" href="lab9styles.css">
+        <style>
+            header h1 { text-align: center; }
+            header p { /* THIS IS THE EXTRA CREDIT*/
+                padding-left: 60px;
+                padding-right: 550px;
+            }
+            img { width: 45px; }
+            .flex-container {
+                display: flex;
+                justify-content: space-around; /* Aligns children with space around them */
+                margin: 20px;
+                margin-top: 70px;
+            }
+            .flex-item .flex-container {
+                text-align: center;
+            }
+            .flex-item {
+                flex-grow: 1; /* Allows flex items to grow to fill the container */
+                flex-basis: 100px;
+            }
+            aside {
+                border-radius: 1em;
+                background-color: blue;
+                padding: 20px; /* Adds some padding inside the aside */
+                margin-left: 100px;
+                margin-right: 200px;
+            }
+            aside p {
+                color: #ffffff; /* Set text color to white */
+            }
+            aside h2 {
+                color: #ffffff; /* Set text color to white */
+            }
+            nav a {
+                margin-right: 10px; /* Adds spacing between nav items */
+            }
+            @media only screen and (max-width: 800px) {
+                body{}
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="contacts.html">Contacts</a>
+            <a href="skills.html">Skills</a>
+        </nav>
+        <header>
+            <h1>My Skills Tables</h1>
+            <p>As a new designer, I have been focusing on honing the skills with in Technology, design, and buisness management in order to be able to freelance or run my own business in website development **THIS IS THE EXTRA CREDIT**</p>  
+        </header>
+        <main>
+            <div class="flex-container">
+                <div class="flex-item flex-container">
+                    <div>
+                        <img src="../images/icons/paintbrush.png" alt="paintbrush"> <br> <p>Graphic Design</p>
+                    </div>
+                    <div>
+                        <img src="../images/icons/innovation.png" alt="lightbulb"> <br> <p>Business</p>
+                    </div>
+                    <div>
+                        <img src="../images/icons/infoarch.png" alt="infoarch"> <br> <p>Information Architecture</p>
+                    </div>
+                    <div>
+                        <img src="../images/icons/html.png" alt="html"> <br> <p>HTML</p>
+                    </div>
+                    <div>
+                        <img src="../images/icons/css.png" alt="css"> <br> <p>CSS</p>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <aside>
+                        <h2>Other Skills</h2>
+                        <p>Email Marketing</p>
+                        <p>CRMs</p>
+                        <p>Figma</p>
+                        <p>AI</p>
+                        <p>Adobe Photoshop</p>
+                    </aside>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

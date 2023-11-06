@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundacion Adelante Guatemala</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+        <img class="homebanner"src="../project/project-images/agf_banner.png" alt="guatamalenkids" width="100%">
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to Fundacion Adelante Guatemala</h2>
+            <p>Fundacion Adelante Guatemala is a non-profit organization dedicated to making a positive impact in Guatemala. Our mission is to support communities, promote education, and improve the lives of Guatemalan people.</p>
+            
+            <h3>Discover the Beauty of Guatemala</h3>
+            <p>Guatemala is a country of rich cultural heritage, stunning landscapes, and warm-hearted people. From the lush rainforests to the ancient Mayan ruins, there is so much to explore and appreciate.</p>
+            
+            <h3>Our Commitment</h3>
+            <p>With your support, we aim to create lasting change in Guatemala. Together, we can build a brighter future for this beautiful nation and its people.</p>
+            
+            <h3>Mission Statement</h3>
+            <p>Our mission is to empower and uplift the communities of Guatemala by providing access to education, healthcare, and sustainable resources. We believe in the potential of every individual, and through our collaborative efforts, we strive to create a better tomorrow for all.</p>
+            
+            <h3>Statistics</h3>
+            <p>1 in 20 children under five years of age die from intestinal caused by lack of drinking water</p>
+            <p>More than 59% of the population lives in poverty</p>
+            <p>More than 23% of the population lives in extreme poverty</p>
+            <p>More than 50% do not have access to clean water</p>
+            <p>97% of rivers, lakes and streams are contaminated  with bacteria from fecal origin</p>
+            <h3>Help us change these statistics.</h3>
+        </section>
+        <h2>Donate to Support Our Cause</h2>
+            <p>Your generous donation helps us make a difference in Guatemala. Thank you for your support!</p>
+
+            <form action="process_donation.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="amount">Amount (USD):</label>
+                <input type="number" id="amount" name="amount" min="1" required><br><br>
+
+                <input type="submit" value="Donate">
+            </form>     
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Fundacion Adelante Guatemala</p>
+    </footer>
+</body>
+</html>

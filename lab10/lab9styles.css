@@ -38,3 +38,14 @@ table, th, td {border: 1px solid black;}
     }
     span {display: none;}
 }
+/* Step 8: Set links to 100% width below breakpoint */
+@media screen and (max-width: 768px) {
+    nav a {
+      width: 100%;
+      display: block; /* Convert inline 'a' elements to block */
+    }
+    nav span {display: none;}
+  }
+  
+ 
+  

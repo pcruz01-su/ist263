@@ -14,9 +14,7 @@ h1, h2, p, table {
     font-family: sans-serif;
 }
 
-a:link {color: #ff0000;}
-
-nav a{color: #ffffff}
+nav a{color: #000000}
 
 nav a:hover {background-color: #656363}
 

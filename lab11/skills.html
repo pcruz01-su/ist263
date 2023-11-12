@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skills</title>
+        <link rel="stylesheet" href="lab9styles.css">
+        <style>
+            header h1 { 
+                text-align: center;
+                font-size: 2em;
+            }
+            header p { /* THIS IS THE EXTRA CREDIT*/
+                padding-left: 1em;
+                padding-right: 5em;
+                font-size: 1.2em;
+            }
+            img {
+                width: 3em; 
+            }
+            .flex-container {
+                display: flex;
+                justify-content: space-around; /* Aligns children with space around them */
+                margin: 1.25em;
+                margin-top: 3.5em;
+            }
+            .flex-item .flex-container {
+                text-align: center;
+            }
+            .flex-item {
+                flex-grow: 1; /* Allows flex items to grow to fill the container */
+                flex-basis: 10em;
+            }
+            aside {
+                border-radius: 1em;
+                background-color: blue;
+                padding: 1.25em; /* Adds some padding inside the aside */
+                margin-left: 3.125em;
+                margin-right: 6.25em;
+            }
+            aside p,  aside h2  {
+                color: #ffffff; /* Set text color to white */
+                font-size: 1.2em;
+            }
+            nav a {
+                margin-right: 0.625em; /* Adds spacing between nav items */
+            }
+            @media only screen and (max-width: 800px) {
+                body{}
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="contacts.html">Contacts</a>
+            <a href="skills.html">Skills</a>
+        </nav>
+        <header>
+            <h1>My Skills Tables</h1>
+            <p>As a new designer, I have been focusing on honing the skills with in Technology, design, and buisness management in order to be able to freelance or run my own business in website development **THIS IS THE EXTRA CREDIT**</p>  
+        </header>
+        <main>
+            <div class="flex-container">
+                <div class="flex-item flex-container">
+                    <div>
+                        <img src="../images/icons/paintbrush.png" alt="paintbrush_icon"> <br> <p>Graphic Design</p>
+                    </div>
+                    <div>
+                        <img src="../images/icons/innovation.png" alt="lightbulb_icon"> <br> <p>Business</p>
+                    </div>
+                    <div>
+                        <img src="../images/icons/infoarch.png" alt="infoarch_icon"> <br> <p>Information Architecture</p>
+                    </div>
+                    <div>
+                        <img src="../images/icons/html.png" alt="html_icon"> <br> <p>HTML</p>
+                    </div>
+                    <div>
+                        <img src="../images/icons/css.png" alt="css_icon"> <br> <p>CSS</p>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <aside>
+                        <h2>Other Skills</h2>
+                        <p>Email Marketing</p>
+                        <p>CRMs</p>
+                        <p>Figma</p>
+                        <p>AI</p>
+                        <p>Adobe Photoshop</p>
+                    </aside>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

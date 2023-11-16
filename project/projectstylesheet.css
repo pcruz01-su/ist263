@@ -5,4 +5,11 @@
     }
     span {display: none;}
 }
-.nnavflex {display: flex;}
+.navflex {
+    display: flex;
+    justify-content: space-between;
+}
+.nav2flex{
+   display: flex;
+    justify-content: space-evenly;
+}

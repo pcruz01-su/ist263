@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Fundacion Adelante Guatemala</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="projectstylesheet.css">
+    <script src="projectscript.js"></script>
 </head>
 <body>
     <header>
-        <h1>Fundacion Adelante Guatemala</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="project-images/fag_logo-removebg-preview.png" alt="Logo" width="70 em">
+            </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active" onclick="showTab('home')">Home</a><span>|</span></li>
+            <li><a href="about.html" onclick="showTab('about')">About</a><span>|</span></li>
+            <li><a href="projects.html" onclick="showTab('projects')">Projects</a></li>
+        </ul>
         </nav>
-        <img class="homebanner"src="../project/project-images/agf_banner.png" alt="guatamalenkids" width="100%">
+        <img class="homebanner"src="project-images/bannerwwords.jpg" alt="faghomepagebanner" width="100%">
     </header>
-
     <main>
         <section>
             <h2>Our Projects</h2>
             <div class="project">
-                <img src="guata_kids.jpeg" alt="Project 1">
+                <img src="project-images/guata_kids.jpeg" alt="Project 1">
                 <h3>Feed the Children Project</h3>
                 <p>A non-profit initiative dedicated to addressing food insecurity among underprivileged children in Guatemala. The project aims to provide balanced and culturally sensitive meals during the summer months, promoting healthy growth, development, and learning. Key activities include needs assessment, menu planning, meal preparation, volunteer recruitment, and monitoring. The program also emphasizes community engagement and awareness. By executing this project, we hope to alleviate hunger, improve academic performance, and strengthen the sense of community among beneficiaries..</p>
             </div>

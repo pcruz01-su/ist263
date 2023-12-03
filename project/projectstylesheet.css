@@ -1,9 +1,20 @@
 @media only screen and (max-width: 800px) {
     nav a {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     span {display: none;}
+}
+/*skip to content*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 /*this is for the navigation*/
 body {
@@ -78,7 +89,8 @@ p {padding: 1em;}
 .content {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px; 
+  margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .left,.right {

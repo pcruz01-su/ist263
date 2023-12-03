@@ -8,21 +8,22 @@
     <script src="projectscript.js"></script>
 </head>
 <body>
+    <a href="#main-content" class="visually-hidden">Skip to Content</a>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="project-images/fag_logo-removebg-preview.png" alt="Logo" width="70 em">
+        </div>
+    <ul class="nav-links">
+        <li><a href="index.html" tabindex= "1" class="active" onclick="showTab('home')">Home</a><span>|</span></li>
+        <li><a  href="about.html" tabindex= "2" onclick="showTab('about')">About</a><span>|</span></li>
+        <li><a href="projects.html" tabindex= "3" onclick="showTab('projects')">Projects</a></li>
+    </ul>
+    </nav>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="project-images/fag_logo-removebg-preview.png" alt="Logo" width="70 em">
-            </div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active" onclick="showTab('home')">Home</a><span>|</span></li>
-            <li><a href="about.html" onclick="showTab('about')">About</a><span>|</span></li>
-            <li><a href="projects.html" onclick="showTab('projects')">Projects</a></li>
-        </ul>
-        </nav>
         <img class="homebanner"src="project-images/bannerwwords.jpg" alt="faghomepagebanner" width="100%">
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="homepagebody">
             <div class="div1">
                 <h2>Small Donations<br> Great Hopes</h2><br>
@@ -38,7 +39,8 @@
                         <h3>Mission</h3>
                         <p>Our mission is to empower and uplift the communities of Guatemala by providing access to education, healthcare, and sustainable resources. We believe in the potential of every individual, and through our collaborative efforts, we strive to create a better tomorrow for all.</p>
                     </div>
-                </div> 
+                </div>
+            <div class="form">  
                 <h3>Statistics</h3>
                 <p>1 in 20 children under five years of age die from intestinal caused by lack of drinking water</p>
                 <p>More than 59% of the population lives in poverty</p>
@@ -46,6 +48,7 @@
                 <p>More than 50% do not have access to clean water</p>
                 <p>97% of rivers, lakes and streams are contaminated  with bacteria from fecal origin</p>
                 <h3>Help us change these statistics.</h3>
+            </div>
         </section>
         <h2>Donate to Support Our Cause</h2>
             <p>Your generous donation helps us make a difference in Guatemala. Thank you for your support!</p>

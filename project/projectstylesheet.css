@@ -84,18 +84,6 @@ p {padding: 1em;}
   background-image: url(project-images/worldmap.jpg) ;
   background-repeat: repeat-x;
 }
-/* projectstylesheet.css */
-
-.content {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  flex-wrap: wrap;
-}
-
-.left,.right {
-  flex-basis: 45%; 
-}
 
 /* Style for h3 and p */
 h3,
@@ -104,17 +92,32 @@ p {
 }
 
 /* Positioning the content */
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  flex-wrap: wrap;
+}
+
+.left,.right {
+  flex-basis: 35%; 
+}
 .left {
-  padding: 10em;
+  padding: 4em;
   border-color: black;
-  border-radius: 10em;
+  border-radius: 4em;
   text-align: center;
+  background-color: #f0f0f0;
+  margin-bottom: 1px;
+
 }
 
 .right {
-  padding: 10em;
+  padding: 4em;
   border-color: black;
-  border-radius: 10em;
+  border-radius: 4em;
   text-align: center;
   margin-top: 10em;
+  background-color: #f0f0f0;
 }

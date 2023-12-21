@@ -24,15 +24,15 @@ body {
   }
   
 header {
-    background-color: #f2f2f2;
-    padding: 20px;
+    /* background-color: #f2f2f2; */
+    /* padding: 20px; */
   }
   
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */ 
     padding: 10px;
   }
   
@@ -69,26 +69,50 @@ header {
 }
 
 /*home page body*/
+@media only screen and {max-width: 800px;
+  .content{
+    display: block;
+    margin-left: 2em;
+    margin-top: 2em;
+  }
+  .left, .right {
+    flex-basis: auto;
+    padding: 2em;
+    margin-top: 2em;
+  }
+}
 
-h2,h3 {color: #3299F1;
+h1, h2,h3 {color: #3299F1;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.8em;
 }
-p {padding: 1em;}
-.div1 p {padding-left: 4em;
-  padding-right: 4em;
+.content p {padding-top: 1em;
+  padding-bottom: 2em;
+
+}
+.div1 p {padding-left: 10em;
+  padding-right: 10em;
 }
 
+.div1{
+  padding: 5em;
+}
 .homepagebody {
   text-align: center;
-  padding: 5em ;
-  background-image: url(project-images/worldmap.jpg) ;
-  background-repeat: repeat-x;
+  background-image: url("project-images/fagworldmap.jpg") ;
+  background-size: cover;
+  background-position: top ;
 }
 
 /* Style for h3 and p */
-h3,
-p {
+h3, p {
   margin: 0; 
+}
+.bigtext{
+  font-size: 3em;
+}
+button {
+  margin: 2em;
 }
 
 /* Positioning the content */
@@ -96,15 +120,19 @@ p {
 .content {
   display: flex;
   justify-content: space-between;
-  margin-top: 2em;
+  margin-top: 5em;
   flex-wrap: wrap;
+  align-items: start;
+  margin-left: 5em;
+  margin-right: 5em;
 }
 
 .left,.right {
-  flex-basis: 35%; 
+  flex-basis: 35%;
 }
+
 .left {
-  padding: 4em;
+  padding: 3em;
   border-color: black;
   border-radius: 4em;
   text-align: center;
@@ -114,10 +142,193 @@ p {
 }
 
 .right {
-  padding: 4em;
+  padding: 3em;
   border-color: black;
   border-radius: 4em;
   text-align: center;
   margin-top: 10em;
   background-color: #f0f0f0;
+}
+
+/* Statistics styling */
+.statistics {background-color:  #f0f0f0;
+  padding: 1em;
+  margin-top: 9em;
+  margin-bottom: 1em;
+}
+
+.statistics h3{
+  margin: 1em;
+  font-size: 3em;
+}
+.statistics h2{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 2em;
+}
+
+
+.icons{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-basis: 20%;
+  padding-left: 5em;
+  padding-right: 5em;
+
+}
+.icons2{
+  display: flex;
+}
+
+/*form styling */
+
+.form{
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.formtitle{ text-align: center;} 
+
+.form form, .form p {
+  padding-left: 28em;
+}
+
+
+/*PAGE TWO */
+.aboutpage {
+  text-align: center;
+  background-image: url("project-images/fagworldmap.jpg") ;
+  background-size: cover;
+  background-position: top ;
+}
+.ourteam, .ourteamp {
+  text-align: center;
+}
+
+.aboutpage {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.aboutpage h3, .aboutpage p{
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.team{
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+/*PAGE Three */
+.projectpage {
+  text-align: center;
+  background-image: url("project-images/fagworldmap.jpg") ;
+  background-size: cover;
+  background-position: top ;
+}
+
+.projecttitle{
+  padding: 1em;
+  font-size: 3em;
+  margin-bottom: 2em;
+}
+.projectpage p{
+  padding: 2em;
+}
+/*footer*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+footer{
+  background-color: #283c64;
+}
+
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px; 
+  background-color: #ffffff;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: #3299F1;
+  opacity: 0.9;
+}
+
+/* Hover effect on social media icons*/
+.socialIcons a:hover {
+  background-color: #3299F1;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  background-color: #ffffff;
+  transition: 0.5s;
+}
+
+.footerNav{
+  margin:30px 0;
+}
+.footerNav ul{
+  display: flex ;
+  justify-content: center;
+  list-style: none;
+}
+.footerNav ul li a:visited {
+  color: #ffffff; /* Set visited link color to white */
+}
+.footerNav ul li a{
+  color: #ffffff;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+
+.footerBottom{
+  background-color: #283c64;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media only screen and (max-width: 800px) {
+  .footerNav ul {
+      flex-direction: column;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
 }
